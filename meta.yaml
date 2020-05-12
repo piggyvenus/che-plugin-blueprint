@@ -1,18 +1,26 @@
-apiVersion: v2                                                   
-publisher:
-name:
-version:                         
-type:
-displayName:
-title:
-description:
-icon:
-repository:
-category:                                                       
+apiVersion: v2
+## Name of the publisher.
+## Example: readyhat
+publisher: {publisher_here}
+## Slugified version of the plug-in name.
+## Example: vscode-vim
+name: {plugin-name}
+## For the sake of organization & simplicity
+## match this to the version of the VS Code
+## extension. Example: 1.14.1
+version: {plugin_version}
+type: VS Code Extension
+displayName: Vim
+title: Visual Studio Code Vim
+description: VS Code Vim extension ported for Eclipse Che!
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/VSCodeVim/Vim.git
 spec:
   containers:
-    - image:
-      name:
-      memoryLimit:
-  extensions:                                                   
-    - 
+    - image: "registry.redhat.io/codeready-workspaces/plugin-openshift-rhel8"
+      name: crw-ocp-rel8
+  extensions:
+    ## Use the information for your repository.
+    ## The {plugin_version} should match the above.
+    ## It will later match a tagged release.
+    - https://github.com/{your_github_user}/{your_github_repo}/raw/{plugin_version}/vscode-vim.vsix

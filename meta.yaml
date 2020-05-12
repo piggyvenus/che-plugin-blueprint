@@ -23,4 +23,4 @@ spec:
     ## Use the information for your repository.
     ## The {plugin_version} should match the above.
     ## It will later match a tagged release.
-    - https://github.com/piggyvenus/che-plugin-blueprint/raw/1.14.1/vscode-vim.vsix
+    - https://github.com/piggyvenus/che-plugin-blueprint/raw/v1.14.1/vscode-vim.vsix

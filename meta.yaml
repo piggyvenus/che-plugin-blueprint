@@ -1,0 +1,18 @@
+apiVersion: v2                                                   
+publisher:
+name:
+version:                         
+type:
+displayName:
+title:
+description:
+icon:
+repository:
+category:                                                       
+spec:
+  containers:
+    - image:
+      name:
+      memoryLimit:
+  extensions:                                                   
+    - 
